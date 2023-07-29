@@ -17,6 +17,30 @@ ul {
 /* Estilos Header */
 
 header {
-  height: 200px;
-  color: red;
+  height: 150px;
+  background-color: red;
+  display: flex;
+}
+
+.logo {
+  width: 30%;
+}
+
+.logo img {
+  height: 150px;
+}
+
+.menuConteinter {
+  width: 70%;
+}
+
+.navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navBar li {
+  margin: 30px;
+  color: white;
 }
