@@ -18,6 +18,22 @@ ul {
   display: flex;
 }
 
+.btn{
+  background-color: #000;
+  color: white;
+  font-size: 30px;
+  padding: 15px;
+  border-radius: 20px;
+  border: 3px solid #000;
+}
+
+.btn:hover{
+  background-color: white;
+  border: 3px solid #000;
+  color: black;
+  transition: 0.3s;
+}
+
 /* Estilos Header */
 
 header {
@@ -77,13 +93,14 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 15PX;
   
 }
 
 .servicios{
   align-items: center;
   overflow: hidden;
-  height: 350px;
+  /* height: 350px; */
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -92,6 +109,7 @@ header {
   position: relative;
   text-align: center;
   display: inline-block;
+  overflow: hidden;
   
 }
 
@@ -103,6 +121,7 @@ header {
 
 .servContainter:hover img{
   transform: scale(1.3);
+  transition: 2s;
   /* opacity: 1; */
 }
 
@@ -110,7 +129,17 @@ header {
   position: absolute;
   top: 40%;
   left: 10%;
-  
+  background-color: #000;
+  opacity: 0.9;
+  color: white;
+  padding: 5PX;
+
+}
+
+.servText:hover{
+  background-color: white;
+  color: #000;
+  transition: 0.5s;
 }
 
 /* Estilos Seccion Visitanos*/
