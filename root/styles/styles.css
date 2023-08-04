@@ -98,9 +98,8 @@ header {
 }
 
 .servicios{
-  align-items: center;
+  justify-content: center;
   overflow: hidden;
-  /* height: 350px; */
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -108,31 +107,37 @@ header {
 .servContainter{
   position: relative;
   text-align: center;
-  display: inline-block;
   overflow: hidden;
+  align-items: center;
+  justify-content: center;
   
 }
 
 .servContainter img{
   height: 350px;
-  /* opacity: 0.7; */
+  filter: grayscale(100%);
+
   
 }
 
 .servContainter:hover img{
   transform: scale(1.3);
-  transition: 2s;
-  /* opacity: 1; */
+  transition: 1.5s;
+  filter: grayscale(0%);
+
 }
 
 .servText{
+  max-width: 80%;
   position: absolute;
-  top: 40%;
-  left: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
   background-color: #000;
   opacity: 0.9;
   color: white;
-  padding: 5PX;
+  padding: 5px;
 
 }
 
@@ -140,6 +145,13 @@ header {
   background-color: white;
   color: #000;
   transition: 0.5s;
+}
+
+.servInfo{
+  display: none;
+  height: 350px;
+  background-color: red;
+  
 }
 
 /* Estilos Seccion Visitanos*/
