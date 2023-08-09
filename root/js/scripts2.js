@@ -1,3 +1,5 @@
+// FUNCION PARA SECCION PROFILE
+
 // Obtener los elementos h2 dentro de profile-container
 const profileHeaders = document.querySelectorAll('.profile-container h2');
 
@@ -50,64 +52,6 @@ textProfileHeaders.forEach(header => {
 });
 
 // FUNCION PARA SECCION SERVICIOS
-
-
-// document.addEventListener('DOMContentLoaded', function () {
-//   const servicios = document.querySelectorAll('.serv');
-
-//   servicios.forEach((servicio) => {
-//     const servText = servicio.querySelector('.serv-text');
-//     const servInfo = servicio.querySelector('.serv-info');
-
-//     servText.addEventListener('click', function (event) {
-//       // Ocultar todos los servicios, excepto el que se ha clickeado
-//       servicios.forEach((serv) => {
-//         if (serv !== servicio) {
-//           serv.style.display = 'none';
-//         }
-//       });
-
-//       // Mostrar el contenido adicional del servicio clickeado
-//       servInfo.style.display = 'inline-block';
-
-//       // Centrar el serv-text dentro del contenedor del servicio visible
-//       servicio.style.display = 'flex';
-//       servicio.style.justifyContent = 'center';
-//       servicio.style.alignItems = 'center';
-
-//       event.stopPropagation(); // Evitar que el clic se propague al documento
-//     });
-
-//     // Agregar un evento clic al h3 categorias para mostrar todos los servicios y ocultar la información adicional
-//     const categoria = servInfo.querySelector('h3');
-//     categoria.addEventListener('click', function (event) {
-//       servicios.forEach((serv) => {
-//         serv.style.display = 'flex';
-//         const servText = serv.querySelector('.serv-text');
-//         servText.style.display = 'block'; // Mostrar el serv-text nuevamente
-//       });
-
-//       // Ocultar la información adicional del servicio clickeado
-//       servInfo.style.display = 'none';
-
-//       event.stopPropagation(); // Evitar que el clic se propague al documento
-//     });
-//   });
-
-//   // Agregar un evento clic al documento para ocultar la información adicional al hacer clic fuera de los servicios
-//   document.addEventListener('click', function () {
-//     servicios.forEach((serv) => {
-//       serv.style.display = 'flex';
-//       const info = serv.querySelector('.serv-info');
-//       info.style.display = 'none';
-//     });
-//   });
-// });
-
-
-
-
-// // FUNCION PARA CAMBIAR POSICION DEL TEXTO CATEGORIA
 
 document.addEventListener('DOMContentLoaded', function () {
   const servicios = document.querySelectorAll('.serv');

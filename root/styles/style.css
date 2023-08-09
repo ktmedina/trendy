@@ -219,6 +219,20 @@
     transition: 0.3s;
   }
 
+  .social{
+    font-size: 50px;
+    margin-top: 10px;
+    justify-content: center;
+    
+
+  }
+
+  .social i{
+    margin-left: 20px;
+    margin-right: 20px;
+   
+  }
+
  
 
   /* Estilos Seccion Ubicacion */
