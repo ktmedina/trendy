@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const servInfo = servicio.querySelector('.serv-info');
   
       servText.addEventListener('click', function (event) {
-        if (window.innerWidth <= 320) {
+        if (window.innerWidth <= 480) {
           // Modo móvil
           // Ocultar todos los servicios, excepto el que se ha clickeado
           servicios.forEach((serv) => {

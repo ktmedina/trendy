@@ -92,7 +92,7 @@
     padding: 5px;
   }
   
-  .navBar li a:hover {
+  .navBar li:hover {
     background-color: #555;
     
   }
@@ -111,7 +111,8 @@
   
   .img-profile img {
     width: 100%; 
-    max-width: 100%; /
+    max-width: 100%;
+    height: 100%;
     
   }
 
@@ -366,7 +367,9 @@
 
 /* Estilos Responsive */
 
-@media screen and (max-width: 320px){
+/* Ancho maximo 480px */
+
+@media screen and (max-width: 480px){
 
   h1{
     font-size: 23px;
@@ -452,10 +455,117 @@ iframe {
   height: auto;
  }
 
- 
-
-
-
-
- 
 }
+
+/* Ancho minimo 481px y maximo 768px */
+
+@media screen and (max-width: 768px){
+
+  .navBar li a{
+    font-size: 10px;
+    text-align:center;
+    
+  }
+
+  .navBar li{
+    margin: 5px;
+    padding: 0;
+    text-align: center;
+    
+  }
+
+  .btn{
+    font-size: 20px;
+  }
+
+  h1{
+    font-size: 25px;
+  }
+
+  h2{
+    font-size: 15px;
+  }
+
+  .img-profile{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "profile1 profile2 profile3"
+    "text-profile text-profile text-profile";
+    
+  }
+  
+  .profile1{
+    grid-area: profile1;
+  }
+  
+  .profile2{
+    grid-area: profile2;
+  }
+  
+  .profile3{
+    grid-area: profile3;
+  }
+  
+  .text-profile{
+    grid-area: text-profile;
+    margin-top: 20px;
+  }
+  
+  .profile-container h2{
+    font-size: 15px;
+      left: 50%;
+      top: 80%;
+      transform: translate( -50%, -20%);
+      padding: 5px;
+     
+  
+   }
+
+   .serv-category{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "serv1 serv2" "serv3 serv4";
+    
+    
+  }
+
+  .serv1{
+    grid-area: serv1;
+  }
+
+  .serv2{
+    grid-area: serv2;
+  }
+
+  .serv3{
+    grid-area: serv3;
+  }
+
+  .serv4{
+    grid-area: serv4;
+  }
+
+  .serv{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+
+  .serv img{
+    height: 100%;
+  }
+
+  iframe {
+    max-width: 100%;
+    height: auto;
+   }
+
+
+}
+
+   
+
+
+
