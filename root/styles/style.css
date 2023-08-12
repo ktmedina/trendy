@@ -245,7 +245,12 @@
   .social i{
     margin-left: 20px;
     margin-right: 20px;
+    padding: 5px;
    
+  }
+
+  .social i:hover{
+    background-color: #555;
   }
 
 
@@ -299,7 +304,26 @@
   .footer{
     background-color: black;
     height: 100px;
+    justify-content: space-around;
+    align-items: center;
+  
   }
+
+  .footer img{
+    height: 100px;
+  }
+
+ .footer h4{
+  color: white;
+  padding-top: 80px;
+ }
+
+ .social-footer i{
+  color: white;
+  font-size: 50px;
+  margin: 10px;
+ }
+
 
   /* Estilos Grid */
 
@@ -317,13 +341,15 @@
     width: 90%;
     max-width: 1200px; 
     margin: 0 auto;
-    padding: 10px; 
+    padding: 10px;
+    /* border-left: solid black;
+    border-right: solid black; */
 }
 
 .about-container{
     grid-area: about;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     
     
 }
@@ -331,14 +357,14 @@
 .serv-container{
     grid-area: serv;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     
 }
 
 .ubic-container{
     grid-area: ubic;
     
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     
     
 }
@@ -348,7 +374,7 @@
     
     width: 100%;
    
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .gustavo-bio{
@@ -362,6 +388,8 @@
 .dubraska-bio{
     display: none;
 }
+
+
 
 
 
@@ -456,6 +484,20 @@ iframe {
  }
 
 }
+
+/* .footer{
+  flex-direction: column;
+  height: auto;
+
+}
+
+.footer img{
+  width: 100%;
+}
+
+.footer h4{
+  padding: 0;
+} */
 
 /* Ancho minimo 481px y maximo 768px */
 
