@@ -16,10 +16,38 @@
     display: none;
   }
 
+  h1{
+    margin: 20px;
+  }
+
+  .btn{
+    background-color: #000;
+    color: white;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 3px solid #000;
+    margin: 15px;
+  }
+  
+  .btn:hover{
+    background-color: white;
+    border: 3px solid #000;
+    color: black;
+    transition: 0.3s;
+  }
+
+  hr{
+    margin-top: 20px;
+  }
 
 
 
 
+
+/* ESTILOS PROFILE */
 
   .about-container{
     width: 90%;
@@ -28,7 +56,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    
   }
 
   .profile-container{
@@ -66,6 +94,7 @@
     transform: translate( -50%, -15%);
     padding-left: 5px;
     padding-right: 5px;
+    background-color: #a8a8a888;
   }
 
   .img-profile h2:hover{
@@ -86,4 +115,78 @@
   .text-profile p{
     text-align: justify;
     padding: 10px;
+  }
+
+  /* ESTILOS SERVICIOS */
+
+  .serv-container{
+    width: 70%;
+    max-width: 480px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .serv img {
+    width: 100%;
+    display: block;
+    filter: grayscale(100%) 
+  }
+
+  .serv img:hover{
+    transform: scale(1.1);
+    transition: 1.5s;
+    filter: grayscale(0%);
+  }
+
+
+  .serv-img{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+   
+  }
+
+  .serv h2{
+    font-size: 30px;
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate( -50%, -50%);
+    padding-left: 5px;
+    padding-right: 5px;
+    white-space: nowrap;
+    background-color: #a8a8a888;
+
+  } 
+
+  .serv h2:hover{
+    background-color: white;
+    color: black;
+  }
+
+  .serv-container .btn{
+    width: 100%;
+  }
+
+  .social{
+    font-size: 50px;
+    margin-top: 10px;
+    justify-content: center;
+    
+
+  }
+
+  .social i{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+   
+  }
+
+  .social i:hover{
+    transform: scale(1.2);
   }
