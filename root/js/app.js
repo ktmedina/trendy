@@ -51,6 +51,8 @@ function servTextCategoryClicked(event) {
     allServElements.forEach(serv => {
       serv.style.display = 'none';
     });
+
+    
   
     clickedServ.style.display = 'block';
   
@@ -84,4 +86,6 @@ function servTextCategoryClicked(event) {
   servInfoElements.forEach(h3 => {
     h3.addEventListener('click', servInfoClicked);
   });
+  
+
   
