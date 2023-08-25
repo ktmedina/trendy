@@ -32,6 +32,11 @@
     font-size: 28px;
   }
 
+  iframe {
+    max-width: 90%;
+    height: 300px;
+   }
+
   .btn{
     background-color: #000;
     color: white;
@@ -51,7 +56,10 @@
     transition: 0.3s;
   }
 
-
+  header{
+    background-color: #000;
+    height: 100px;
+  }
 
 
 
@@ -115,6 +123,9 @@
   .text-profile{
     padding: 10px;
     border: 3px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
   }
 
@@ -143,10 +154,18 @@
     
   }
 
+ .serv{
+  margin: 10px;
+  
+
+ }
+
   .serv img {
     width: 100%;
     display: block;
-    filter: grayscale(100%) 
+    filter: grayscale(100%);
+   
+    
   }
 
   .serv img:hover{
@@ -159,8 +178,7 @@
   .serv-img{
     position: relative;
     overflow: hidden;
-    margin-bottom: 10px;
-   
+    
   }
 
   .serv-img h2{
@@ -208,7 +226,7 @@
   .serv-info{
     padding: 10px;
     border: 3px solid #000;
-    margin-bottom: 10px;
+    margin-top: 10px;
 
   }
 
@@ -227,9 +245,17 @@
   
   }
 
+  /* FOOTER */
+
+  footer{
+    background-color: #000;
+    height: 100px;
+    margin-top: 20px;
+  }
+
 /* RESPONSIVE */
 
-@media screen and (max-width: 768px) and (min-width: 481px){
+@media screen and (min-width: 555px){
 
 
   .about-container{
@@ -247,23 +273,99 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 
   .serv{
-    max-width: 50%;
-    
+   width: 48%;
+   margin: 5px;
+   
   }
 
   .serv-img{
+    width: 100%;
     margin-left: 5px;
     margin-right: 5px;
 
   }
 
+  .serv-info{
+    width: 50%;
+  }
+
+
+}
+
+
+@media screen and (min-width: 1024px){
+
+  .about-container{
+    width: 90%;
+    height: auto;
+    max-width: 1500px;
+  
+    
+  }
+
+  .profile-container{
+    flex-direction: row;
+   justify-content: space-between;
+  }
+
+  .text-profile{
+    width: 30%;
+    height: 300px;
+    
+    
+    
+  }
+
+  .text-profile p{
+    font-size: 14px;
+    
+    
+  }
+
+  .text-profile .btn{
+    font-size: 16px;
+    margin: 0;
+  
+  }
+
  
 
+  .img-profile{
+    height: 300px;
+  }
 
+  .serv-container{
+    width: 90%;
+    max-width: 1500px;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .serv-category{
+    
+    justify-content: space-between;
+  }
 
+  .serv{
+    width: 23%;
+    margin: 0;
+    
+    
+   }
 
+   .serv h2{
+    font-size: 25px;
+
+   }
+
+   
+
+   .serv-img{
+    margin: 0;
+   }
 }
