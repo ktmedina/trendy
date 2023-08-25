@@ -10,6 +10,7 @@
   body{
     background-color: #e9ecf4;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
   }
 
   .ocultar{
@@ -20,16 +21,18 @@
     display: block;
   }
 
+
+
   h1{
     margin: 20px;
   }
 
   p{
-    font-size: 18px;
+    font-size: 15px;
   }
 
   h2{
-    font-size: 28px;
+    font-size: 20px;
   }
 
   iframe {
@@ -56,13 +59,10 @@
     transition: 0.3s;
   }
 
-  header{
-    background-color: #000;
-    height: 100px;
-  }
 
 
 
+/* ESTILOS HEADER */
 
 
 /* ESTILOS PROFILE */
@@ -134,8 +134,9 @@
   }
 
   .text-profile p{
+    
     text-align: justify;
-    padding: 10px;
+    padding: 5px;
   }
 
   .text-profile .btn{
@@ -294,9 +295,11 @@
     width: 50%;
   }
 
+  h2{
+    font-size: 30px;
+  }
 
 }
-
 
 @media screen and (min-width: 1024px){
 
@@ -304,36 +307,39 @@
     width: 90%;
     height: auto;
     max-width: 1500px;
-  
-    
+   
   }
 
   .profile-container{
     flex-direction: row;
-   justify-content: space-between;
+   justify-content: center;
   }
 
   .text-profile{
     width: 30%;
     height: 300px;
-    
-    
-    
   }
 
   .text-profile p{
-    font-size: 14px;
+    font-size: 11px;
     
     
   }
 
   .text-profile .btn{
-    font-size: 16px;
+    font-size: 12px;
     margin: 0;
   
   }
 
- 
+  h2{
+    font-size: 23px;
+  }
+
+.text-profile h2{
+  margin: 0;
+  font-size: 18px;
+}
 
   .img-profile{
     height: 300px;
@@ -341,7 +347,7 @@
 
   .serv-container{
     width: 90%;
-    max-width: 1500px;
+    max-width: 1230px;
     justify-content: center;
     align-items: center;
   }
@@ -359,13 +365,23 @@
    }
 
    .serv h2{
-    font-size: 25px;
+    font-size: 20px;
 
    }
-
-   
 
    .serv-img{
     margin: 0;
    }
+}
+
+@media screen and (min-width: 1200px){
+  .text-profile p{
+    
+    font-size: 13px;
+  }
+
+  .serv h2{
+    font-size: 25px;
+  }
+
 }
