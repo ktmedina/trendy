@@ -12,12 +12,24 @@
     text-align: center;
   }
 
-  .oculto{
+  .ocultar{
     display: none;
+  }
+
+  .mostrar{
+    display: block;
   }
 
   h1{
     margin: 20px;
+  }
+
+  p{
+    font-size: 18px;
+  }
+
+  h2{
+    font-size: 28px;
   }
 
   .btn{
@@ -39,9 +51,7 @@
     transition: 0.3s;
   }
 
-  hr{
-    margin-top: 20px;
-  }
+
 
 
 
@@ -117,6 +127,10 @@
     padding: 10px;
   }
 
+  .text-profile .btn{
+    font-size: 20px;
+  }
+
   /* ESTILOS SERVICIOS */
 
   .serv-container{
@@ -149,7 +163,7 @@
    
   }
 
-  .serv h2{
+  .serv-img h2{
     font-size: 30px;
     position: absolute;
     color: white;
@@ -163,7 +177,7 @@
 
   } 
 
-  .serv h2:hover{
+  .serv-img h2:hover{
     background-color: white;
     color: black;
   }
@@ -189,4 +203,26 @@
 
   .social i:hover{
     transform: scale(1.2);
+  }
+
+  .serv-info{
+    padding: 10px;
+    border: 3px solid #000;
+    margin-bottom: 10px;
+
+  }
+
+  .serv-info h2{
+    margin-bottom: 10px;
+  }
+
+  .serv-info p{
+    text-align: justify;
+    padding: 10px;
+  }
+
+  .serv-info .btn{
+    margin: 0;
+    font-size: 20px;
+  
   }
