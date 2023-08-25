@@ -83,7 +83,7 @@ textProfileH3Elements.forEach(textProfileH3 => {
 480
  
 function servTextCategoryClicked(event) {
-  if (window.innerWidth <= 480) {
+  if (window.innerWidth <= 555) {
     const clickedServTextCategory = event.currentTarget;
     const clickedServ = clickedServTextCategory.parentElement.parentElement;
 
