@@ -79,6 +79,10 @@ header{
   height: 80px;
 }
 
+.container-menu{
+  display: none;
+}
+
 .container__menu{
   display: flex;
   align-items: center;
@@ -250,7 +254,7 @@ header{
 
  }
 
-  .serv img {
+  .img {
     width: 100%;
     display: block;
     filter: grayscale(100%);
@@ -258,7 +262,7 @@ header{
     
   }
 
-  .serv img:hover{
+  .img:hover{
     transform: scale(1.1);
     transition: 1.5s;
     filter: grayscale(0%);
@@ -347,6 +351,10 @@ header{
 
 @media screen and (min-width: 555px){
 
+  .container-menu{
+    display: none;
+  }
+
 
   .about-container{
     width: 90%;
@@ -391,6 +399,44 @@ header{
 }
 
 @media screen and (min-width: 1024px){
+
+
+  
+  
+  
+ .container__menu{
+  display: none;
+  
+ }
+
+ .container-menu{
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+ }
+
+ 
+
+.logo-desk img{
+  height: 100px;
+ }
+
+ .container-menu ul{
+  display: flex;
+  margin-right: 20px;
+ }
+
+ .container-menu ul li {
+  margin: 10px;
+ }
+
+
+
+
+
+
 
   /* Estilos Profile */
 
@@ -452,11 +498,22 @@ header{
     
   }
 
+  .serv{
+    width: 100%;
+    
+  }
+
+  .serv-info{
+    max-width: 700px;
+    margin-top: 0;
+   
+  }
+
  
   
 
   .serv-info p{
-    font-size: 13px;
+    font-size: 17px;
   }
 
   .serv-info .btn{
@@ -465,31 +522,42 @@ header{
 
 
    .serv h2{
+    font-size: 23px;
+   }
+
+   .serv .btn{
     font-size: 20px;
    }
 
 /* ESTILOS PARA FUNCION JS SERVICIOS */
-.serv-info-show{
-  width: 100%;
-  height: 320px;
-  width: 100%;
+.serv-info-show{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
+  
+  
+}
+
+.serv-show{
   justify-content: center;
-  justify-items: center;
+ 
 }
 
 
 .serv-img-show{
   height: 100%;
   width: auto;
+  
 }
 
-.serv-img-show-img{
-  height: 100%;
-  width: 100%;
+.img-show{
+  height: 500px;
+  width: auto;
+  
+  
 }
-
  
 }
 
