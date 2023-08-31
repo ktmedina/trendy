@@ -542,7 +542,6 @@ header{
 
 .serv-show{
   justify-content: center;
-  height: 500px;
  
 }
 
@@ -572,4 +571,12 @@ header{
     font-size: 25px;
   }
 
+}
+
+@media screen and (min-width: 556px) and (max-width: 1023px) {
+
+ .serv-info{
+  width: 100%;
+ }
+  
 }
