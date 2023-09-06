@@ -402,6 +402,114 @@ header{
   
   }
 
+  /* CARRUSEL */
+  .carousel{
+    margin: auto;
+    width: 90%;
+    
+}
+
+.carousel h2{
+    font-size: 12px;
+    line-height: 38px;
+    padding-bottom: 50px;
+    opacity: .9;
+    text-transform: uppercase ;
+    font-weight: 600;
+    text-align: center;
+    color: red;
+}
+
+.carrusel-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 304px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 440px;
+    
+    overflow: hidden;
+    
+}
+
+.carrusel-track{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  transition: .5s ease-in-out;
+  overflow: hidden;
+}
+
+.carrusel{
+  position: relative;
+  width: 210px;
+  padding: 0 18px;
+  float: left;
+  display: flex;
+  height: 100%;
+}
+
+.carrusel h4{
+  position: absolute;
+  z-index: 1;
+  font-size: 22px;
+  line-height: 23px;
+  color: white;
+  padding: 15px;
+}
+
+.carrusel h4 small{
+  font-size: 15px;
+  display: block;
+
+}
+
+.carrusel a img{
+  object-fit: cover;
+  height: 300px;
+  width: 200px;
+  border-radius: 15px;
+  transition: .3s ease-in-out;
+}
+
+.carrusel-arrow{
+  border-radius: 30px;
+  background-color: white;
+  position: absolute;
+  z-index: 4;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  
+
+}
+
+.carrusel-arrow:focus{
+  outline: 0;
+}
+
+.carrusel-arrow svg{
+  width: 12px;
+  height: 100%;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.carrusel-prev{
+  left: 0px;
+}
+
+.carrusel-next{
+  right: 0px;
+}
+
+
+
+
   /* FOOTER */
 
   footer{
@@ -776,3 +884,4 @@ header{
     font-size: 20px;
   }
  }
+
