@@ -74,6 +74,8 @@ header{
 
 .logo{
   margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .logo img{
@@ -357,9 +359,7 @@ header{
     color: black;
   }
 
-  .serv-container .btn{
-    width: 100%;
-  }
+  
 
   .social{
     font-size: 50px;
@@ -757,3 +757,22 @@ header{
  }
   
 }
+
+@media screen and (max-width: 451px) {
+
+  .social{
+    font-size: 40px;
+  }
+
+  .social i{
+    margin: auto;
+  }
+   
+  .serv-img h2{
+    font-size: 20px;
+  }
+
+  .serv-container .btn{
+    font-size: 20px;
+  }
+ }
