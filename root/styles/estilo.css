@@ -21,6 +21,15 @@
     display: block;
   }
 
+  .linea{
+    background-color: #000;
+    height: 5px;
+    width: 50%;
+    margin: auto;
+    
+    
+  }
+
   a{
     text-decoration: none;
     color: white;
@@ -176,7 +185,7 @@ header{
 
   .banner h3{
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     font-style: italic;
     
     padding: 10px;
@@ -226,7 +235,7 @@ header{
   .about-container{
     width: 90%;
     max-width: 480px;
-    margin: auto;
+    margin: 20px auto 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -237,6 +246,7 @@ header{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-top: 10px;
   }
 
   .profile{
@@ -305,15 +315,20 @@ header{
   .serv-container{
     width: 70%;
     max-width: 480px;
-    margin: auto;
+    margin: 20px auto 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     
   }
 
+  .serv-category{
+    margin-top: 10px;
+  }
+
  .serv{
   margin: 10px;
+  
   
 
  }
@@ -404,13 +419,18 @@ header{
 
   /* CARRUSEL */
 
+  .carrusel-container{
+    margin: 10px auto 10px auto;
+    width: 90%;
+  }
+
   .wrapper{
     max-width: 1200px;
     width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+   
     padding: 0 10px;
     margin: auto;
   }
@@ -439,13 +459,21 @@ header{
     object-fit: cover;
     width: 100%;
     margin-left: 14px;
+    filter: grayscale(100%);
   }
 
   .carousel img:first-child{
     margin-left: 0px;
   }
 
+.ubic-container{
+  margin: 20px auto 0 auto;
+  width: 90%;
+}
 
+.ubic{
+  margin-top: 10px;
+}
 
 
   /* FOOTER */
@@ -572,7 +600,7 @@ header{
 @media screen and (min-width: 1024px){
 
 .banner{
-  max-height: 700px ;
+  max-height: 600px ;
 }
 
 .banner-img{
@@ -580,7 +608,7 @@ header{
 }
   
 .banner-img img{
- max-height: 700px;
+ max-height: 600px;
   width: auto;
 }
 
@@ -589,8 +617,10 @@ header{
 }
 
 .banner-info h3{
-  font-size: 80px;
+  font-size: 60px;
 }
+
+
   
   
  .container__menu{
