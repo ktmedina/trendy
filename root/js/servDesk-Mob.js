@@ -1,7 +1,5 @@
-// Variable global para rastrear el modo
 let modoDesktop = window.innerWidth > 1024;
 
-// Función para aplicar eventos a los elementos .serv
 function aplicarEventosServ() {
   const anchoPantalla = window.innerWidth;
   const servicios = document.querySelectorAll('.serv');
@@ -9,7 +7,6 @@ function aplicarEventosServ() {
   if (anchoPantalla > 1024) {
     modoDesktop = true;
 
-    // Código para el modo desktop
     servicios.forEach((servicio) => {
       const servText = servicio.querySelector('.serv-text');
       const servInfo = servicio.querySelector('.serv-info');
@@ -17,17 +14,14 @@ function aplicarEventosServ() {
       const servCategoryImg = servicio.querySelector('.serv img');
 
       servText.addEventListener('click', () => {
-        // Oculta todos los elementos 'serv' excepto el seleccionado
         servicios.forEach((s) => {
           if (s !== servicio) {
             s.style.display = 'none';
           }
         });
 
-        // Muestra el 'serv' seleccionado
         servicio.style.display = 'flex';
 
-        // Muestra el 'serv-info' correspondiente
         servInfo.classList.remove('ocultar');
         servInfo.classList.add('mostrar');
         servImg.classList.remove('ocultar');
@@ -44,12 +38,9 @@ function aplicarEventosServ() {
         servCategoryImg.classList.add('img-show');
       });
 
-      // Agrega el evento clic al botón dentro de 'serv-info'
       const btnServInfo = servicio.querySelector('.btn');
       btnServInfo.addEventListener('click', (e) => {
-        e.stopPropagation(); // Evita que el clic se propague a 'serv-text'
 
-        // Oculta el 'serv-info' actual
         servInfo.classList.remove('mostrar');
         servInfo.classList.add('ocultar');
         servImg.classList.remove('ocultar');
@@ -65,7 +56,6 @@ function aplicarEventosServ() {
 
         servCategoryImg.classList.remove('img-show');
 
-        // Muestra todos los elementos 'serv'
         servicios.forEach((s) => {
           s.style.display = 'block';
           s.style.height = '100%';
@@ -75,35 +65,28 @@ function aplicarEventosServ() {
   } else {
     modoDesktop = false;
 
-    // Código para el modo móvil
     servicios.forEach((servicio) => {
       const servText = servicio.querySelector('.serv-text');
       servText.addEventListener('click', () => {
-        // Oculta todos los elementos 'serv' excepto el seleccionado
         servicios.forEach((s) => {
           if (s !== servicio) {
             s.style.display = 'none';
           }
         });
 
-        // Muestra el 'serv' seleccionado
         servicio.style.display = 'block';
 
-        // Mostrar el 'serv-info' correspondiente en modo móvil
         const servInfo = servicio.querySelector('.serv-info');
         servInfo.classList.remove('ocultar');
         servInfo.classList.add('mostrar');
       });
 
-      // Agrega el evento clic al botón dentro de 'serv-info' en modo móvil
       const btnServInfo = servicio.querySelector('.btn');
       btnServInfo.addEventListener('click', () => {
-        // Oculta el 'serv-info' actual en modo móvil
         const servInfo = servicio.querySelector('.serv-info');
         servInfo.classList.remove('mostrar');
         servInfo.classList.add('ocultar');
 
-        // Muestra todos los elementos 'serv' en modo móvil
         servicios.forEach((s) => {
           s.style.display = 'block';
           s.style.height = '100%';
@@ -113,6 +96,5 @@ function aplicarEventosServ() {
   }
 }
 
-// Llama a la función al cargar la página y cuando cambie el tamaño de la ventana
 window.addEventListener('load', aplicarEventosServ);
 window.addEventListener('resize', aplicarEventosServ);

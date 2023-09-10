@@ -1,25 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <!-- Font Awasome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Style -->
+      referrerpolicy="no-referrer"/>
+    <!-- Estilos CSS-->
     <link rel="stylesheet" href="./styles/estilo.css" />
     <link rel="stylesheet" href="./styles/carrusel.css">
     <title>¡Tr3ndy Barber!</title>
@@ -28,15 +25,13 @@
     <header>
       <div class="container__menu">
         <div class="logo">
-          <img src="./assets/T2 2.jpg" alt="" />
+          <img src="./assets/logo_1.jpg" alt="Logo" />
         </div>
         <div class="menu">
           <i class="fas fa-bars" id="btn_menu"></i>
           <div id="back_menu"></div>
           <nav id="nav">
-            <img src="images/logo-magtimus-v2.3-1.png" alt="" />
             <ul>
-              <li><a href="#" id="selected">Inicio</a></li>
               <li><a href="#serv">Servicios</a></li>
               <li><a href="#us">Nosotros</a></li>
               <li><a href="#ubic">Contáctanos</a></li>
@@ -46,12 +41,11 @@
       </div>
       <div class="container-menu">
         <div class="logo-desk">
-          <img src="./assets/T2 2.jpg" alt="" />
+          <img src="./assets/logo_1.jpg" alt="Logo" />
         </div>
 
         <nav>
           <ul>
-            <li><a href="#" id="selected">Inicio</a></li>
             <li><a href="#serv">Servicios</a></li>
             <li><a href="#us">¡Nosotros!</a></li>
             <li><a href="#ubic">Contáctanos</a></li>
@@ -90,15 +84,15 @@
       <div class="profile-container">
         <div class="profile">
           <div class="img-profile">
-            <img src="./assets/gustavoPerfilMod.png" alt="Gustavo perfil" />
+            <img src="./assets/Perfiles/gustavoPerfilMod.png" alt="Gustavo perfil" />
             <h2>Gustavo</h2>
           </div>
           <div class="img-profile">
-            <img src="./assets/luisPerfilMod.png" alt="Luis perfil" />
+            <img src="./assets/Perfiles/luisPerfilMod.png" alt="Luis perfil" />
             <h2>Luis</h2>
           </div>
           <div class="img-profile">
-            <img src="./assets/dubraskaPerfilMod.png" alt="dubraska perfil" />
+            <img src="./assets/Perfiles/dubraskaPerfilMod.png" alt="dubraska perfil" />
             <h2>Dubraska</h2>
           </div>
         </div>
@@ -167,7 +161,7 @@
         <!-- Categoria Cabello -->
         <div class="serv" id="serv1">
           <div class="serv-img">
-            <img class="img" src="./assets/corte.png" alt="Corte de cabello" />
+            <img class="img" src="./assets/Servicios/corte.png" alt="Corte de cabello" />
             <h2 class="serv-text">Corte de Cabello</h2>
           </div>
           <div class="serv-info ocultar">
@@ -191,7 +185,7 @@
           <div class="serv-img">
             <img
               class="img"
-              src="./assets/servTratamientoFacial.png"
+              src="./assets/Servicios/barba.png"
               alt="Barba"
             />
             <h2 class="serv-text">Corte de Barba</h2>
@@ -217,7 +211,7 @@
           <div class="serv-img">
             <img
               class="img"
-              src="./assets/facial.png"
+              src="./assets/Servicios/facial.png"
               alt="Tratamiento Facial"
             />
             <h2 class="serv-text">Limpieza Facial</h2>
@@ -245,7 +239,7 @@
           <div class="serv-img">
             <img
               class="img"
-              src="./assets/ServColorimetria.png"
+              src="./assets/Servicios/ServColorimetria.png"
               alt="Colorimetría"
             />
             <h2 class="serv-text">Colorimetría</h2>
@@ -301,26 +295,23 @@
     </div>
 
     <div class="wrapper">
-      <i class="fa-solid fa-angle-left"></i>
+      <i id="left" class="fa-solid fa-angle-left"></i>
       <div class="carousel">
-        <img src="./assets/carrusel/1.jpg" alt="img 1">
-        <img src="./assets/carrusel/2.jpg" alt="img 2">
-        <img src="./assets/carrusel/3.jpg" alt="img 3">
-        <img src="./assets/carrusel/4.jpeg" alt="img 4">
-        <img src="./assets/carrusel/5.jpeg" alt="img 5">
-        <img src="./assets/carrusel/6.jpeg" alt="img 6">
-        <img src="./assets/carrusel/7.jpg" alt="img 7">
-        <img src="./assets/carrusel/8.jpg" alt="img 8">
-        <img src="./assets/carrusel/9.jpeg" alt="img 9">
-        <img src="./assets/carrusel/10.jpeg" alt="img 10">
-        <img src="./assets/carrusel/11.jpeg" alt="img 11">
-        <img src="./assets/carrusel/12.jpeg" alt="img 12">
-        <img src="./assets/carrusel/13.jpeg" alt="img 13">
-
-
+        <img src="./assets/carrusel/1.png" alt="img" draggable="false">
+        <img src="./assets/carrusel/2.png" draggable="false">
+        <img src="./assets/carrusel/3.png" draggable="false">
+        <img src="./assets/carrusel/4.png" draggable="false">
+        <img src="./assets/carrusel/5.png" draggable="false">
+        <img src="./assets/carrusel/6.png" draggable="false">
+        <img src="./assets/carrusel/7.png" draggable="false">
+        <img src="./assets/carrusel/8.png" draggable="false">
+        <img src="./assets/carrusel/9.png" draggable="false">
+        <img src="./assets/carrusel/10.png" draggable="false">
+        <img src="./assets/carrusel/11.png" draggable="false">
+        <img src="./assets/carrusel/12.png" draggable="false">
+        <img src="./assets/carrusel/13.png" draggable="false">
       </div>
-      <i class="fa-solid fa-angle-right"></i>
-
+      <i id="right" class="fa-solid fa-angle-right"></i>
     </div>
     
    
@@ -352,8 +343,18 @@
           <img src="./assets/TR3NDY_FONDO_NEGRO - copia.jpeg" alt="logo" />
         </div>
         <div class="footer-msj">
-          <h2>¡CONÓCENOS!</h2>
-          <p>Queremos darte la mejor experiencia, ¡agenda con nosotros!</p>
+          <h2>¡VÍSITANOS!</h2>
+          <p>Av. Vicuña Mackenna, Poniente 7083, 8260171 La Florida, Región Metropolitana</p>
+          <P>trendybarberchile@gmail.com</P>
+          <p>+56 9 89255506</p>
+        </div>
+        <div class="footer-horarios">
+          <h2>¡HORARIOS!</h2>
+          <p>Lunes a Viernes: </p>
+          <p>10:00 - 20:00</p>
+          <p>Sábado a Domingo: </p>
+          <p>10:00 - 18:00</p>
+          
         </div>
         <div class="footer-social">
           <h2>¡SÍGUENOS!</h2>
