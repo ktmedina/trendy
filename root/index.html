@@ -16,6 +16,8 @@
       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"/>
+    <!-- Animate CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Estilos CSS-->
     <link rel="stylesheet" href="./styles/estilo.css" />
     <link rel="stylesheet" href="./styles/carrusel.css">
@@ -62,7 +64,7 @@
           <img src="./assets/TR3NDY_FONDO_NEGRO.jpeg" alt="" />
         </div>
         <div class="banner-frase">
-          <h3>¡DESCUBRE EL ARTE DE LO IMPECABLE!</h3>
+          <h3 data-aos="zoom-in">¡DESCUBRE EL ARTE DE LO IMPECABLE!</h3>
         </div>
         <a
           href="https://trendybarbercl.setmore.com/?instant_experiences_enabled=true"
@@ -79,19 +81,19 @@
 
     <div class="about-container" id="us">
       <div class="linea"></div>
-      <h1>¿Quiénes somos?</h1>
+      <h1 data-aos="fade-right">¿Quiénes somos?</h1>
       <div class="linea"></div>
       <div class="profile-container">
         <div class="profile">
-          <div class="img-profile">
+          <div data-aos="flip-left" class="img-profile">
             <img src="./assets/Perfiles/gustavoPerfilMod.png" alt="Gustavo perfil" />
             <h2>Gustavo</h2>
           </div>
-          <div class="img-profile">
+          <div data-aos="flip-left" class="img-profile">
             <img src="./assets/Perfiles/luisPerfilMod.png" alt="Luis perfil" />
             <h2>Luis</h2>
           </div>
-          <div class="img-profile">
+          <div data-aos="flip-left" class="img-profile">
             <img src="./assets/Perfiles/dubraskaPerfilMod.png" alt="dubraska perfil" />
             <h2>Dubraska</h2>
           </div>
@@ -108,7 +110,7 @@
               una terapia de amigos y relajación, ¡mucho más que en un hábito!
             </p>
           </div>
-          <div class="gustavo-bio ocultar">
+          <div  class="gustavo-bio ocultar">
             <h2>Gustavo</h2>
             <p>
               ¡Hola! Soy Gustavo y te contaré sobre mi: en mi tiempo libre suelo
@@ -155,13 +157,13 @@
 
     <div class="serv-container" id="serv">
       <div class="linea"></div>
-      <h1>Nuestros Servicios</h1>
+      <h1 data-aos="fade-left">Nuestros Servicios</h1>
       <div class="linea"></div>
       <div class="serv-category">
         <!-- Categoria Cabello -->
-        <div class="serv" id="serv1">
-          <div class="serv-img">
-            <img class="img" src="./assets/Servicios/corte.png" alt="Corte de cabello" />
+        <div data-aos="flip-right" class="serv" id="serv1">
+          <div  class="serv-img">
+            <img class="img ocultar" src="./assets/Servicios/corte.png" alt="Corte de cabello" />
             <h2 class="serv-text">Corte de Cabello</h2>
           </div>
           <div class="serv-info ocultar">
@@ -181,10 +183,10 @@
           </div>
         </div>
         <!-- Categoria Barba -->
-        <div class="serv" id="serv2">
+        <div data-aos="flip-right" class="serv" id="serv2">
           <div class="serv-img">
             <img
-              class="img"
+              class="img ocultar"
               src="./assets/Servicios/barba.png"
               alt="Barba"
             />
@@ -207,10 +209,10 @@
           </div>
         </div>
         <!-- Categoria Facial -->
-        <div class="serv" id="serv3">
+        <div data-aos="flip-right" class="serv" id="serv3">
           <div class="serv-img">
             <img
-              class="img"
+              class="img ocultar"
               src="./assets/Servicios/facial.png"
               alt="Tratamiento Facial"
             />
@@ -235,10 +237,10 @@
           </div>
         </div>
         <!-- Categoria Colorimetria -->
-        <div class="serv" id="serv4">
+        <div data-aos="flip-right" class="serv" id="serv4">
           <div class="serv-img">
             <img
-              class="img"
+              class="img ocultar"
               src="./assets/Servicios/ServColorimetria.png"
               alt="Colorimetría"
             />
@@ -289,27 +291,28 @@
     <!-- Carrusel -->
     <div class="carrusel-container">
       <div class="linea"></div>
-      <h1>Galeria de Experiencias</h1>
+      <h1 data-aos="fade-right">Galeria de Experiencias</h1>
       <div class="linea"></div>
 
     </div>
 
-    <div class="wrapper">
+    <div data-aos="flip-up" class="wrapper">
       <i id="left" class="fa-solid fa-angle-left"></i>
       <div class="carousel">
-        <img src="./assets/carrusel/1.png" alt="img" draggable="false">
-        <img src="./assets/carrusel/2.png" draggable="false">
+        <img src="./assets/carrusel/13.png" alt="img" draggable="false">
+        <img src="./assets/carrusel/8.png" draggable="false">
         <img src="./assets/carrusel/3.png" draggable="false">
         <img src="./assets/carrusel/4.png" draggable="false">
-        <img src="./assets/carrusel/5.png" draggable="false">
+        <img src="./assets/carrusel/12.png" draggable="false">
         <img src="./assets/carrusel/6.png" draggable="false">
         <img src="./assets/carrusel/7.png" draggable="false">
-        <img src="./assets/carrusel/8.png" draggable="false">
+        <img src="./assets/carrusel/2.png" draggable="false">
         <img src="./assets/carrusel/9.png" draggable="false">
         <img src="./assets/carrusel/10.png" draggable="false">
         <img src="./assets/carrusel/11.png" draggable="false">
-        <img src="./assets/carrusel/12.png" draggable="false">
-        <img src="./assets/carrusel/13.png" draggable="false">
+        <img src="./assets/carrusel/5.png" draggable="false">
+        <img src="./assets/carrusel/1.png" draggable="false">
+        <img src="./assets/carrusel/14.png" draggable="false">
       </div>
       <i id="right" class="fa-solid fa-angle-right"></i>
     </div>
@@ -318,7 +321,7 @@
     <!-- Seccion Ubicacion -->
     <div class="ubic-container" id="ubic">
       <div class="linea"></div>
-      <h1>¡¿Dónde encontrarnos?!</h1>
+      <h1 data-aos="fade-left">¡¿Dónde encontrarnos?!</h1>
       <div class="linea"></div>
       <div class="ubic">
         <iframe
@@ -343,9 +346,9 @@
           <img src="./assets/TR3NDY_FONDO_NEGRO - copia.jpeg" alt="logo" />
         </div>
         <div class="footer-msj">
-          <h2>¡VÍSITANOS!</h2>
+          <h2>¡VISÍTANOS!</h2>
           <p>Av. Vicuña Mackenna, Poniente 7083, 8260171 La Florida, Región Metropolitana</p>
-          <P>trendybarberchile@gmail.com</P>
+          <p>trendybarberchile@gmail.com</p>
           <p>+56 9 89255506</p>
         </div>
         <div class="footer-horarios">
@@ -380,11 +383,17 @@
         </small>
       </div>
     </footer>
-
+    <!-- JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/profile.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/carousel.js"></script>
     <script src="./js/servDesk-Mob.js"></script>
+    <script src="./js/imgenHover.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
     
   </body>
 </html>
