@@ -325,9 +325,27 @@ header {
   cursor: pointer;
 }
 
+.saber-mas h3{
+
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -15%);
+
+}
+
+
+
 .serv-img h2:hover {
   background-color: white;
   color: black;
+}
+
+.serv-img .saber-mas{
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -15%);
+  font-size: 20px;
+
 }
 
 .social {
@@ -653,6 +671,7 @@ footer {
   .text-profile {
     width: 30%;
     height: 300px;
+    margin-top: 20px;
   }
 
   .text-profile p {
